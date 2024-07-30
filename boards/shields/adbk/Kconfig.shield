@@ -1,0 +1,2 @@
+config ADBK
+    def_bool $(shields_list_contains,adbk)
