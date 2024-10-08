@@ -27,6 +27,12 @@
             #binding-cells = <0>;
             bindings = <&bt BT_NXT>;
         };
+
+        caps: caps {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&kp CAPSLOCK>, <&kp MACRO_PLACEHOLDER>, <&kp CAPSLOCK>;
+        };
     };
 
     sensors {
@@ -53,9 +59,9 @@
             bindings = <
     &trans  
     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans         &trans          &trans       &trans     &trans      &trans      &trans
-    &trans      &kp RS(Q)   &kp RS(W)   &kp RS(E)   &kp RS(R)   &kp RS(T)   &kp RS(Y)   &kp RS(U)   &kp RS(I)   &kp RS(O)   &kp RS(P)    &trans         &trans                       &trans     &trans      &trans      &trans
-    &trans      &kp RS(A)   &kp RS(S)   &kp RS(D)   &kp RS(F)   &kp RS(G)   &kp RS(H)   &kp RS(J)   &kp RS(K)   &kp RS(L)   &trans       &trans         &trans                       &trans     &trans      &trans      &trans
-    &trans      &kp RS(Z)   &kp RS(X)   &kp RS(C)   &kp RS(V)   &kp RS(B)   &kp RS(N)   &kp RS(M)   &trans      &trans      &trans                                                   &trans     &trans      &trans    
+    &trans      &caps Q     &caps W     &caps E     &caps R     &caps T     &caps Y     &caps U     &caps I     &caps O     &caps P      &trans         &trans                       &trans     &trans      &trans      &trans
+    &trans      &caps A     &caps S     &caps D     &caps F     &caps G     &caps H     &caps J     &caps K     &caps L     &trans       &trans         &trans                       &trans     &trans      &trans      &trans
+    &trans      &caps Z     &caps X     &caps C     &caps V     &caps B     &caps N     &caps M     &trans      &trans      &trans                                                   &trans     &trans      &trans    
     &trans      &trans      &trans      &trans                              &trans                  &trans      &trans      &trans       &trans         &trans                       &trans                 &trans      &trans 
     &trans
     >;
